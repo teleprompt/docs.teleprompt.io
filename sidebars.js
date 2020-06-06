@@ -1,6 +1,9 @@
 module.exports = {
   docsSidebar: {
-    "Getting started": ["create-project", "client-setup"],
-    "Usage": ["cli-client-usage", "rest-api"],
+    "Getting started": ["docs/create-project", "docs/client-setup"],
+    "Usage": ["docs/cli-client-usage", "docs/rest-api"],
   },
+  recipesSidebar: {
+    "Recipes": ["recipes/index", "recipes/npm-publish"]
+  }
 };

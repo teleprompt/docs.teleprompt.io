@@ -16,13 +16,14 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
+          to: 'docs/docs/create-project',
+          activeBasePath: 'docs/docs',
           label: 'Docs',
           position: 'left',
         },
         {
-          to: 'recipes/',
+          to: 'docs/recipes/index',
+          activeBasePath: 'docs/recipes',
           label: 'Recipes',
           position: 'left'
         },
@@ -65,17 +66,11 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'create-project',
+          homePageId: 'docs/create-project',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
             'https://github.com/teleprompt/teleprompt-docs/edit/master/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/teleprompt/teleprompt-docs/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
