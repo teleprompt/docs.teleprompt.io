@@ -71,11 +71,22 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('docs/')}
+            >
               Get Started
+            </Link>
+            <Link
+              className={classnames(
+                'button button--lg',
+                styles.openDashboard,
+              )}
+              target="_blank"
+              to="https://teleprompt.io/dashboard"
+            >
+              Dashboard
             </Link>
           </div>
         </div>

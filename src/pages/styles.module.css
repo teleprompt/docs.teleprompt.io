@@ -24,6 +24,10 @@
   justify-content: center;
 }
 
+.buttons > * {
+  margin: 0 8px;
+}
+
 .features {
   display: flex;
   align-items: center;
@@ -34,4 +38,27 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.getStarted:not(.button--active):not(:hover) {
+  background-color: rgba(255, 255, 255, 0.87) !important;
+  color: #211346 !important;
+  transition: background-color .1s, color .1s;
+}
+
+.getStarted:not(.button--active):hover {
+  background-color: white !important;
+}
+
+.openDashboard:not(.button--active):not(:hover) {
+  background-color: rgba(124, 82, 235, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  color: white !important;
+  transition: background-color .1s, color .1s;
+}
+
+.openDashboard:not(.button--active):hover {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid white;
+  color: white !important;
 }

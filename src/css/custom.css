@@ -7,6 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-button-font-weight: 600;
   --ifm-color-primary: #7c52eb;
   --ifm-color-primary-dark: #6d3fe9;
   --ifm-color-primary-darker: #6239d2;
@@ -52,15 +53,4 @@ html[data-theme='dark'] .header-github-link:before {
 
 .hero--primary {
   background: linear-gradient(10deg, var(--ifm-color-primary-dark), var(--ifm-color-primary-light))
-}
-
-.hero--primary .button.button--secondary:not(.button--active):not(:hover) {
-  background-color: rgba(255, 255, 255, 0.12);
-  color: white;
-  transition: background-color .1s, color .1s;
-}
-
-.hero--primary .button.button--secondary:not(.button--active):hover {
-  background-color: white;
-  color: #211346;
 }
