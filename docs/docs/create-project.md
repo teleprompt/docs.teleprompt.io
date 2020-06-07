@@ -14,4 +14,4 @@ Be aware that for security reasons this key is only ever shown once on creation.
 
 ## Next steps
 
-Read next how to [set up a teleprompt client](./client-setup) and [use it](./cli-client-usage).
+Read next how to [set up a teleprompt client](./client-setup) and [how to use it](./cli-client-usage).

@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'teleprompt', // Usually your GitHub org/user name.
-  projectName: 'teleprompt-docs', // Usually your repo name.
+  projectName: 'docs.teleprompt.io', // Usually your repo name.
   themeConfig: {
     disableDarkMode: true,
     navbar: {
@@ -16,26 +16,26 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/docs/create-project',
-          activeBasePath: 'docs/docs',
+          to: 'docs/create-project',
+          activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
         {
-          to: 'docs/recipes/index',
-          activeBasePath: 'docs/recipes',
+          to: 'recipes/index',
+          activeBasePath: 'recipes',
           label: 'Recipes',
           position: 'left'
         },
         {
-          to: 'https://teleprompt.io/dashboard',
-          label: 'Dashboard',
-          position: 'left'
+          href: 'https://teleprompt.io/dashboard',
+          className: 'header-dashboard-link header-icon-link',
+          'aria-label': 'Dashboard',
+          position: 'right',
         },
-        // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/teleprompt',
-          className: 'header-github-link',
+          className: 'header-github-link header-icon-link',
           'aria-label': 'GitHub repository',
           position: 'right',
         },
@@ -67,10 +67,11 @@ module.exports = {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'docs/create-project',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/teleprompt/teleprompt-docs/edit/master/',
+            'https://github.com/teleprompt/docs.teleprompt.io/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
